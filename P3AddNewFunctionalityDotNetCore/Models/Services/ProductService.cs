@@ -94,6 +94,7 @@ namespace P3AddNewFunctionalityDotNetCore.Models.Services
         public List<string> CheckProductModelErrors(ProductViewModel product)
         {
             List<string> modelErrors = new List<string>();
+
             if (product.Name == null || string.IsNullOrWhiteSpace(product.Name))
             {
                 modelErrors.Add(_localizer["MissingName"]);
@@ -116,7 +117,7 @@ namespace P3AddNewFunctionalityDotNetCore.Models.Services
 
             if (product.Stock == null || string.IsNullOrWhiteSpace(product.Stock))
             {
-                modelErrors.Add(_localizer["MissingQuantity"]);
+                modelErrors.Add(_localizer["MissingStock"]);
             }
 
             if (!int.TryParse(product.Stock, out int qt))
