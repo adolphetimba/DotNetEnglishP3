@@ -42,8 +42,6 @@ namespace P3AddNewFunctionalityDotNetCore.Controllers
         {
             List<string> modelErrors = new List<string>();
 
-            
-
             modelErrors = _productService.CheckProductModelErrors(product);
 
 

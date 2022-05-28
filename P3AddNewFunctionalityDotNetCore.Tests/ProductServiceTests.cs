@@ -131,7 +131,7 @@ namespace P3AddNewFunctionalityDotNetCore.Tests
         }
 
         [Fact]
-        public void CheckIfPriceIsGreatherThanZero()
+        public void CheckIfPriceIsGreaterThanZero()
         {
             //Arrange
             var options = new DbContextOptionsBuilder<P3Referential>()
@@ -210,7 +210,7 @@ namespace P3AddNewFunctionalityDotNetCore.Tests
         }
 
         [Fact]
-        public void CheckIfStockIsInterger()
+        public void CheckIfStockIsInteger()
         {
             //Arrange
             var options = new DbContextOptionsBuilder<P3Referential>()
